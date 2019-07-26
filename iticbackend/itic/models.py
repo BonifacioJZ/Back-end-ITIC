@@ -68,7 +68,7 @@ class Proceso(models.Model):
     def __str__(self):
         return self.nombre
 class Semestre (models.Model):
-    nombre = models.CharField()
+    nombre = models.CharField(max_length=100, blank=True, null=True)
     
 class Matter (models.Model):
     clave = models.CharField(max_length=18,blank=True, null=False,primary_key=True, unique=True)
