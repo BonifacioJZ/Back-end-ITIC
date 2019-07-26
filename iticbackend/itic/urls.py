@@ -12,5 +12,5 @@ router.register('news',NewViewSet)
 router.register('tags',TagViewSet)
 router.register('archivos',ArchivoViewSet)
 router.register('procesos',ProcesoViewSet)
-router.register('materias',MatterViewSet)
+router.register('matters',MatterViewSet)
 urlpatterns = router.urls

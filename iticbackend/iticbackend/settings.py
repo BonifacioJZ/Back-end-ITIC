@@ -24,8 +24,12 @@ SECRET_KEY = '-yat2-beh-d0t)hlu!^k=v3%b2xg*qw19k&sat&wq9@k4l==kw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+CORS_ORIGIN_ALLOW_ALL = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'http://localhost:8080',
+    'localhost'
+]
 
 
 # Application definition
@@ -90,7 +94,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'itic',
         'USER': 'revan',
-        'PASSWORD': 'ghost6699',
+        'PASSWORD': 'ghost669',
         'HOST': '127.0.0.1',
         'PORT': '3306' 
     }
