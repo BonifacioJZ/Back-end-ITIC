@@ -69,11 +69,14 @@ class Proceso(models.Model):
         return self.nombre
 class Semestre (models.Model):
     nombre = models.CharField(max_length=100, blank=True, null=True)
+    def __str__(self):
+        return self.nombre
+    
     
 class Matter (models.Model):
     clave = models.CharField(max_length=18,blank=True, null=False,primary_key=True, unique=True)
     name = models.CharField(max_length=20, blank=True, null=True)
-    description = HTMLField(max_length=300, blank=True, null=True)
+    description = HTMLField(max_length=1000, blank=True, null=True)
     horas_practicas = models.IntegerField(blank=True, null=True)
     horas_escritas = models.IntegerField(blank=True, null=True)
     semestre = models.ForeignKey(Semestre,on_delete=models.DO_NOTHING,default=1)
