@@ -3,7 +3,7 @@ from django.contrib import admin
 #Imports models
 from .models import (Archivo, Proceso, Teacher,Nivel,
                     Formacion_Academica,Tag,Formacion_Academica,New,
-                    Matter)
+                    Matter,Semestre)
 
 # Register your models here.
 
@@ -45,6 +45,11 @@ class AdminMatter(admin.ModelAdmin):
     
     class Meta:
         modle = Matter
+class AdminSemestre(admin.ModelAdmin):
+    list_display = ["nombre"]
+    class Meta:
+        modle = Semestre
+
 
 admin.site.register(Teacher,AdminTeacher)
 admin.site.register(Nivel,AdminNivel)
@@ -54,3 +59,4 @@ admin.site.register(New,AdminNew)
 admin.site.register(Proceso,AdminProceso)
 admin.site.register(Archivo,AdminArchivo)
 admin.site.register(Matter,AdminMatter)
+admin.site.register(Semestre,AdminSemestre)
