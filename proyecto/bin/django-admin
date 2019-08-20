@@ -1,4 +1,4 @@
-#!/home/revan/Desarrollo/Back-end-ITIC/proyecto/bin/python3
+#!/srv/Back-end-ITIC/proyecto/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

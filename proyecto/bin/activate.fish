@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/revan/Desarrollo/Back-end-ITIC/proyecto"
+set -gx VIRTUAL_ENV "/srv/Back-end-ITIC/proyecto"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
@@ -52,7 +52,7 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
         set -l old_status $status
 
         # Prompt override?
-        if test -n "(proyecto) "            
+        if test -n "(proyecto) "
             printf "%s%s" "(proyecto) " (set_color normal)
         else
             # ...Otherwise, prepend env

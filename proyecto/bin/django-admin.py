@@ -1,4 +1,4 @@
-#!/home/revan/Desarrollo/Back-end-ITIC/proyecto/bin/python3
+#!/srv/Back-end-ITIC/proyecto/bin/python
 from django.core import management
 
 if __name__ == "__main__":
